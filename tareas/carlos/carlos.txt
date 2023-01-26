@@ -1,2 +1,6 @@
 hola clase de fuentes
+<<<<<<< HEAD
 estoy editando el archivo
+=======
+editando el archivo desde la nube
+>>>>>>> 87136f851b48b935f8005f975cf26e86dfa3ec88
