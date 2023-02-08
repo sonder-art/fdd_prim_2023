@@ -2,7 +2,11 @@ channels:
   - conda-forge # canales de conda
   - anaconda # canales de conda
 dependencies:
+<<<<<<< HEAD
   - numpy
+=======
+  - numpy=1.21.0
+>>>>>>> a019443 (Guardando localmente environment)
   - pandas
   - pip
   - pip: # instalado con pip
