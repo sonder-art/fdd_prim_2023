@@ -3,10 +3,14 @@ channels:
   - anaconda # canales de conda
 dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - numpy
 =======
   - numpy=1.21.0
 >>>>>>> a019443 (Guardando localmente environment)
+=======
+  - numpy
+>>>>>>> e18891d (quitanddo la versión específica de numpy)
   - pandas
   - pip
   - pip: # instalado con pip
