@@ -6,4 +6,8 @@ dependencies:
   - pandas
   - pip
   - pip: # instalado con pip
+<<<<<<< HEAD
     - seaborn
+=======
+    - seaborn
+>>>>>>> 74434ff (Numpy enviroment)
