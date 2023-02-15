@@ -1,7 +1,6 @@
 channels:
 dependencies:
   - numpy
-  - pandas
   - pip
   - jupyter
   - pip: # instalado con pip
