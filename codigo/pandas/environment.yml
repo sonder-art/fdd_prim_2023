@@ -3,6 +3,9 @@ dependencies:
   - jupyter
   - pandas
   - pip
+<<<<<<< HEAD
   - notebook
+=======
+>>>>>>> 66246a5 (pandas conda env)
   - pip: # instalado con pip
     - seaborn
