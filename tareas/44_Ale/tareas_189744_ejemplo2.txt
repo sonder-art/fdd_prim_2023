@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 Modificacion del ejemplo 2
 
 Modificacion local del ejemplo 2 para hacer add, commit y push. 
+=======
+Modificacion del ejemplo 2
+>>>>>>> 382d0e6 (Update tareas_189744_ejemplo2.txt)
