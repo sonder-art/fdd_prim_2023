@@ -127,9 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-tareas/sebastian/ejemplo2.txt
-tareas/42_Daniel/Numpy/environment.yml
-tareas/42_Daniel/Numpy/environment.yml
-tareas/42_Daniel/Numpy/environment.yml
+tareas/*
+!tareas/07_javier/*
 .gitignore
-tareas/42_Daniel/Numpy/environment.yml
