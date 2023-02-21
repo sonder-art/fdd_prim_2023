@@ -2,8 +2,8 @@ channels:
   - conda-forge # canales de conda
   - anaconda # canales de conda
 dependencies:
-  - numpy
+  - numpy=1.21.0
   - pandas
   - pip
   - pip: # instalado con pip
-      - seaborn
+    - seaborn

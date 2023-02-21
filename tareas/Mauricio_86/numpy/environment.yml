@@ -6,4 +6,4 @@ dependencies:
   - pandas
   - pip
   - pip: # instalado con pip
-      - seaborn
+    - seaborn
