@@ -128,7 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-tareas/*
-!tareas/20_giancarlo/*
-
-.gitignore
+tareas/
+!tareas/20_giancarlo
