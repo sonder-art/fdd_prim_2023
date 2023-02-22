@@ -18,4 +18,4 @@ ENV APP_USER=$APP_USER
 COPY . /app
 
 # Define el comando por defecto para ejecutar la aplicación
-CMD ["/bin/bash"]
+CMD ["/bin/bash"]   
