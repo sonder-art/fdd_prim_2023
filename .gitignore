@@ -130,5 +130,5 @@ dmypy.json
 
 # Tareas classmates
 tareas/*
-!tareas/Mauricio_86/*
+!tareas/Mauricio_86
 .gitignore
