@@ -1,3 +1,0 @@
-Modificacion del ejemplo 2
-
-Modificacion local del ejemplo 2 para hacer add, commit y push. 
