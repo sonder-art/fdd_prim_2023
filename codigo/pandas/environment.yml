@@ -5,11 +5,15 @@ dependencies:
   - pip
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - notebook
 =======
 >>>>>>> 66246a5 (pandas conda env)
 =======
   - notebook
 >>>>>>> cc469cb (update pandas)
+=======
+  - notebook
+>>>>>>> upstream/main
   - pip: # instalado con pip
     - seaborn
