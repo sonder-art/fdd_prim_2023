@@ -130,4 +130,4 @@ dmypy.json
 
 .gitignore
 tareas/*
-!tareas/20_giancarlo/*
+!tareas/20_giancarlo/
