@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#tareas
+# Para ignorar las tareas
+tareas/*
+!tareas/86_ian
