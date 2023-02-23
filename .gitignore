@@ -133,3 +133,4 @@ dmypy.json
 # Para ignorar las tareas
 tareas/*
 !tareas/86_ian/
+tareas/86_ian/pandas/env/*
