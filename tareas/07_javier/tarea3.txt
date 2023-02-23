@@ -1,1 +1,0 @@
-Este es un documento para la tarea 3, subiendo archivos via github después de haber hecho un upstream
