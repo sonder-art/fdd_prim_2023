@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 # Para ignorar las tareas
+.gitignore
 tareas/*
 !tareas/mariana48
