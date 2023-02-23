@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+.gitignore
 tareas/*
 !tareas/42_Daniel
