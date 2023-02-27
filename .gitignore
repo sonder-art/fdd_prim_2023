@@ -132,3 +132,5 @@ dmypy.json
 .gitignore
 tareas/*
 !tareas/mariana48
+tareas_v2/*
+!tareas_v2/mariana48
