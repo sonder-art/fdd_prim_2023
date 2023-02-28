@@ -1,0 +1,14 @@
+APPLY:
+apply es un método de pandas que permite aplicar cierta función definida a lo largo del "axis" elegido.
+Si la quieres aplicar por filas/rows, se escoge axis=0.
+Si la quieres aplicar por columnas/cols, se escoge axis=1.
+
+
+CONCAT:
+concat permite concatenar los objetos de pandas (dataframes o series). Permite que estas no tengan el mismo tamaño
+o, para el dataframe, el mismo número de columnas o filas, así como agregar de estas. 
+Al igual que con pd.apply, para pegar columnas o filas, se especifica con el parámetro axis con los mismos valores.
+Al concatenar dataframes con índices repetidos, lo que ocurriría es que concat va a generar nuevos índices resultados de la 
+unión de los pasados.
+Si un dataframe tiene índices repetidos, puedes emplear el parámetro verify_integrity=True para que el método arroje
+una excepción y no los concatene. 
