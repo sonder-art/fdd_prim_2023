@@ -12,3 +12,15 @@ Al concatenar dataframes con índices repetidos, lo que ocurriría es que concat
 unión de los pasados.
 Si un dataframe tiene índices repetidos, puedes emplear el parámetro verify_integrity=True para que el método arroje
 una excepción y no los concatene. 
+
+Ahora, parece que al momento de guardar los mails utilizando regex, está solo agregando los segmentos del mail que le siguen al 
+último acento. Debemos entonces agregar a nuestra búsqueda cómo se caracterizan los acentos en regex. Para ello, empleamos el código
+Unicode correspondiente: 
+    -Para la ñ: /u00F1
+    -Para la Ñ: /u00D1
+    -Para la á: /u00E1 
+    -para la é: /u00E9 
+    -Para la í: /u00ED 
+    -Para la ó: /u00F3 
+    -Para la ú: /u00FA 
+Esto también incluye a las letras mayúsculas acentuadas si se tratan como un rango. 
