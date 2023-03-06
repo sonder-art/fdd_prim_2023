@@ -1,4 +1,0 @@
-numpy>=1.15.0, <1.21.0
-pandas
-seaborn
-scikit-learn

@@ -1,0 +1,3 @@
+usuario: marianamoons
+url: https://hub.docker.com/u/marianamoons
+repositorio de la clase: https://hub.docker.com/repository/docker/marianamoons/repositorio.fdd/general
