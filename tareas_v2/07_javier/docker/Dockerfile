@@ -10,8 +10,9 @@ COPY requirements.txt .
 # Instala las dependencias
 RUN pip install --no-cache-dir -r requirements.txt
 
-#
-ARG APP_USER = 'default'
+# Que valor quieres si el usuario no lo da
+
+ARG APP_USER="default"
 ENV APP_USER=$APP_USER
 
 # Copia todo el código al contenedor
