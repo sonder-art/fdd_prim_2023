@@ -1,0 +1,3 @@
+https://hub.docker.com/u/giancarlodlra
+giancarlodlra
+https://hub.docker.com/repository/docker/giancarlodlra/apptarea/general
