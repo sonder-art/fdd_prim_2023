@@ -1,8 +1,9 @@
 channels:
+  - conda-forge # canales de conda
+  - anaconda # canales de conda
 dependencies:
-  - jupyter
+  - numpy
   - pandas
   - pip
-  - notebook
   - pip: # instalado con pip
     - seaborn

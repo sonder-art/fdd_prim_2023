@@ -1,8 +1,9 @@
 channels:
 dependencies:
   - jupyter
-  - pandas
   - pip
+  - pandas
   - notebook
   - pip: # instalado con pip
     - seaborn
+
