@@ -30,7 +30,7 @@ services:
     container_name: postgres_app
     # Ejecutar hasta que el servicio exista
     ports:
-      - '8888:8888'
+      - '8887:8888'
     stdin_open: true # docker run -i
     tty: true # docker run -t
     depends_on:
@@ -40,7 +40,8 @@ services:
     # "no": nunca, "always":siempre, "on-failure":lo reinicia si el contenedor devuelve un estado de error,
     # "unless-stopped": lo reinicia en todos los casos excepto cuando se detiene
     restart: "on-failure"  
-
+    volumes:
+      - ./app:/app
 
 volumes:
 # Volumenes que se van a cargar (si no existen se crean)

@@ -35,7 +35,7 @@ RUN pip install -r requirements.txt
 FROM base as dev
 COPY dev_environment.yml /app/dev_environment.yml
 RUN conda env update --name base --file /app/dev_environment.yml
-COPY app.py /app/app.py
+#COPY app.py /app/app.py
 ENTRYPOINT ["conda", "run","-n", "base", "jupyter", "lab","--ip=0.0.0.0","--allow-root", "--NotebookApp.token=''","--NotebookApp.password=''"]
 
 
