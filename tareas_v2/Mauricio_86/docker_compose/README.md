@@ -11,10 +11,11 @@ Lanza los contenedores desde especificados en docker-compose.yml.
 Asegurate de estar en la carpeta .../codigo/docker_compose/
 
 > docker-compose up
-
+Para recostruir los contenedores que tienen `build`
+> docker-compose up --build
 ## Entrar al jupyter lab 
 Entra a tu navegador y pon l url:
-`localhost:8888`
+`localhost:8887`
 
 ## Entrar a contenedores
 Entrar al contendedor del app
