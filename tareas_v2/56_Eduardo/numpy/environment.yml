@@ -1,0 +1,7 @@
+channels:
+dependencies:
+  - numpy
+  - pip
+  - jupyter
+  - pip: # instalado con pip
+    - seaborn
