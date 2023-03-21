@@ -1,5 +1,5 @@
 # Usa una imagen base de Python
-FROM python:3.9-slim
+FROM --platform=linux/amd64 python:latest as base
 
 # Establece el directorio de trabajo en /app
 WORKDIR /app
