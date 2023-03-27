@@ -1,0 +1,42 @@
+Docker Compose:
+    -comando rm: sirve para borrar ya sea images, containers, volumes, etc.
+             Agregamos el $() para denotar una variable en bash/shell.
+             -a: all (incluso los containers detenidos)
+             -f: force (a la fuerza)
+    -Sirve para crear una aplicacion desde el inicio con multiples containers.
+     "docker-compose up": comando para utilizar un docker compose existente (formato .yml)
+                           al estar en la carpeta donde se encuentre. Automaticamente corre el script.
+    -Formato .json (java script s object notation):
+        Tiene el formato "key": "value", separando cada uno con una coma (,)
+        "value" puede ser de cualquier tipo, array u otro objeto.
+            *Para declarar un objeto, siempre tiene que ser entre llaves ({})
+        Se usa mas para archivos que se intercambian constantemente entre computadoras. 
+    -Formato .yaml (.yml):
+        No usamos llaves para representar jerarquia, sino la indentacion de python.
+        No se usan ("") ni (,); el formato es key: value 
+        No se utiliza tanto .yml, a pesar de su facilidad, porque parsea mas lento que un .json
+        Se usa mas para archivos de configuracion.
+    -Creacion: SIEMPRE se tiene que llamar "docker-compose.yml"
+        Script:
+             version: "version"
+             services: (Enlistas el nombre de los servicios que usa tu app)
+                Para cada servicio debes encender un container:
+                    build: (donde agarrar un Dockerfile para crear una image; pathway en Docker del image)
+                    image: my-image:version-builton (imagen existente en Dockerhub)
+                    ports: (mapeo de puertos)
+                        - {puerto del service}:{puerto de la image}
+                    environment:
+                        - MY_ENVIRONMENT=environment://host
+                    volumes:
+                        -myvolume:/data/db
+            volumes:
+                myvolume:
+    -Todos los comandos que utilizamos en el engine de docker, tambien puede hacerse sobre docker-compose.
+        *build
+        Las imagenes creadas siempre tienen como prefijo el nombre de la app.
+        -se puede crear una imagen usando la bandera: docker-compose up --build myimage
+    -Para cuando se quiera dejar de utilizar la app:
+        docker-compose down: va a borrar los contenedores, pero no las images.
+    -Networking: Una network es una red en la cual los containers de una app se comunican entre si.
+        Cada container tiene una direccion IP propia
+        El host de la network solo existe dentro del Docker environment

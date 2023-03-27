@@ -1,0 +1,37 @@
+{
+  "loan_amnt": {},
+  "funded_amnt": {},
+  "funded_amnt_inv": {},
+  "term": {},
+  "int_rate": {},
+  "installment": {},
+  "sub_grade": {},
+  "emp_length": {
+    "estraegia": "mean",
+    "valor": 6.063911083902429
+  },
+  "home_ownership": {},
+  "annual_inc": {},
+  "verification_status": {},
+  "loan_status": {},
+  "pymnt_plan": {},
+  "purpose": {},
+  "dti": {},
+  "delinq_2yrs": {},
+  "earliest_cr_line": {},
+  "open_acc": {},
+  "revol_bal": {},
+  "total_acc": {},
+  "total_pymnt": {},
+  "total_pymnt_inv": {},
+  "last_pymnt_d": {
+    "estrategia": "identificador",
+    "valor": "missing"
+  },
+  "last_pymnt_amnt": {},
+  "tot_cur_bal": {},
+  "acc_open_past_24mths": {},
+  "avg_cur_bal": {},
+  "pct_tl_nvr_dlq": {},
+  "tot_hi_cred_lim": {}
+}
