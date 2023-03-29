@@ -1,0 +1,50 @@
+## Version del formato de docker-compose
+version: "3.8"
+
+## servicios
+services:
+  # Contenedor de la base de datos
+  db:
+    # Nombre de la imagen
+    image: postgres:15
+    container_name: postgres_db
+    # docker run ... --env
+    environment:
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_USER=username
+      - POSTGRES_DB=database
+    # docker run ... -p
+    ports:
+      - '5432:5432'
+    # Volumenes persistentes a montar 
+    # docker run ... -v
+    volumes: 
+      - db-psql:/var/lib/postgresql/data      
+  
+  ## Aplicacion: Nuestro codigo de python
+  app :
+    # Construye el docker especificado en esa carpeta
+    build: 
+      context: ./app/
+      target: dev
+    container_name: postgres_app
+    # Ejecutar hasta que el servicio exista
+    ports:
+      - '8887:8888'
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    depends_on:
+      - db
+    # Cargar file con variables de ambiente
+    env_file: common.env  
+    # "no": nunca, "always":siempre, "on-failure":lo reinicia si el contenedor devuelve un estado de error,
+    # "unless-stopped": lo reinicia en todos los casos excepto cuando se detiene
+    restart: "on-failure"  
+    volumes:
+      - ./app:/app
+
+volumes:
+# Volumenes que se van a cargar (si no existen se crean)
+  db-psql: # Nombre del volumen
+    driver: local
+

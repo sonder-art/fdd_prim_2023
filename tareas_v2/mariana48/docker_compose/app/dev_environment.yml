@@ -1,0 +1,7 @@
+channels:
+dependencies:
+- notebook
+- conda-forge::jupyterlab
+- conda-forge::jupyterthemes
+- conda-forge::jupyterlab_widgets
+- conda-forge::ipywidgets 
