@@ -15,12 +15,12 @@ services:
       - POSTGRES_DB=database
     # docker run ... -p
     ports:
-      - '5433:5433'
+      - '5432:5432'
     # Volumenes persistentes a montar 
     # docker run ... -v
     volumes: 
-      - db-psql:/var/lib/postgresql/data      
-  
+      - db-psql:/var/lib/postgresql/data   
+
   ## Aplicacion: Nuestro codigo de python
   app :
     # Construye el docker especificado en esa carpeta
@@ -47,4 +47,5 @@ volumes:
 # Volumenes que se van a cargar (si no existen se crean)
   db-psql: # Nombre del volumen
     driver: local
+
 
